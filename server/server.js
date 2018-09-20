@@ -56,6 +56,11 @@ app.prepare().then(() => {
         await app.render(ctx.req, ctx.res, actualPage, queryParams)
     })
     // root url, return home page. Just index page.
+    router.get('/style', async (ctx, next) => {
+        const actualPage = '/style/style'
+        const queryParams = {}
+        await app.render(ctx.req, ctx.res, actualPage, queryParams)
+    })
     router.get('/', async (ctx, next) => {
         const actualPage = '/'
         const queryParams = {}

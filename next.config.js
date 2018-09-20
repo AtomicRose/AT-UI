@@ -80,13 +80,13 @@ module.exports = withPlugins([
     [withSass, {
         cssModules: true,
         cssLoaderOptions: {
-            localIdentName: '[path]___[local]___[hash:base64:5]',
+            localIdentName: '[local]',
         }
     }],
     [withCSS, {
         cssModules: true,
         cssLoaderOptions: {
-            localIdentName: '[path]___[local]___[hash:base64:5]',
+            localIdentName: '[local]',
         }
     }],
     [optimizedImages, {

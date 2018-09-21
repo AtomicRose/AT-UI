@@ -19,11 +19,12 @@ class Layout extends React.Component {
     render() {
         return (
             <Provider rootStore={this.rootStore}>
-                <div>
+                {this.props.children}
+                {/* <div>
                     <Header />
                     {this.props.children}
                     {__DEV__ === true ? <DevTools /> : null}
-                </div>
+                </div> */}
             </Provider>
         )
     }

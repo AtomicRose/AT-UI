@@ -1,1 +1,8 @@
-@import "./grid/index.scss";
+// common
+@import "./common/common.scss";
+// grid
+@import "./grid/grid.scss";
+// components
+// layout
+@import "./components/layout/container.scss";
+@import "./components/button/button.scss";
